@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f7f8f8;
+    color: #222;
+}
+
+/* Header */
+
+header {
+    background-color: white;
+    padding: 15px 5%;
+    box-shadow: 0 2px 5px #ddd;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 36px;
+    color: #002f34;
+}
+
+.header-top a {
+    text-decoration: none;
+    color: #002f34;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-box select {
+    width: 180px;
+    padding: 14px;
+    border: 2px solid #002f34;
+    border-radius: 5px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #002f34;
+    border-radius: 5px;
+}
+
+.login {
+    color: #002f34;
+    font-weight: bold;
+}
+
+.sell {
+    padding: 12px 22px;
+    border: 4px solid #23e5db;
+    border-radius: 25px;
+    background: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Categories */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 22px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #002f34;
+    font-size: 14px;
+}
+
+/* Welcome Section */
+
+main {
+    padding: 30px 5%;
+}
+
+.welcome {
+    background-color: #dff5f4;
+    padding: 35px;
+    border-radius: 8px;
+    margin-bottom: 35px;
+}
+
+.welcome h2 {
+    color: #002f34;
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    color: #444;
+}
+
+.heading {
+    color: #002f34;
+    margin-bottom: 22px;
+}
+
+/* Product Cards */
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 22px 0;
+}
+
+.card {
+    width: 23.5%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 185px;
+    object-fit: cover;
+}
+
+.details {
+    padding: 12px;
+}
+
+.details h3 {
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.details h2 {
+    color: #002f34;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.details p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.details small {
+    color: #777;
+}
+
+/* Footer */
+
+footer {
+    background-color: #ebeeef;
+    margin-top: 35px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 40px 5%;
+}
+
+.footer-content h3 {
+    font-size: 14px;
+    color: #002f34;
+    margin-bottom: 18px;
+}
+
+.footer-content p {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    background-color: #002f34;
+    color: white;
+    padding: 20px 5%;
+    font-size: 13px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+    .card {
+        width: 32%;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    .search-box {
+        flex-wrap: wrap;
+    }
+
+    .search-box select,
+    .search-box input {
+        width: 100%;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    main {
+        padding: 20px 12px;
+    }
+
+    .welcome {
+        padding: 22px;
+    }
+
+    .card {
+        width: 48%;
+    }
+
+    .card img {
+        height: 135px;
+    }
+
+    .footer-content {
+        justify-content: flex-start;
+    }
+
+    .copyright {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
